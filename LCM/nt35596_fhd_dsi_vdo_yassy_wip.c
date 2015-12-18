@@ -68,11 +68,40 @@ static void init_lcm_registers(void)
 
 	unsigned int data_array[16];
 
-/*	TC358768_DCS_write_1A_1P(0xFF, 0x05);
+	TC358768_DCS_write_1A_1P(0xFF, 0xEE);
 	TC358768_DCS_write_1A_1P(0xFB, 0x01);
-	TC358768_DCS_write_1A_1P(0xC5, 0x01);
-	MDELAY(100);*/
-
+	TC358768_DCS_write_1A_1P(0x18, 0x40);
+	MDELAY(100);
+	TC358768_DCS_write_1A_1P(0xFC, 0x00);
+	TC358768_DCS_write_1A_1P(0x18, 0x00);
+	TC358768_DCS_write_1A_1P(0xFC, 0x00);
+	TC358768_DCS_write_1A_1P(0x7C, 0x31);
+	TC358768_DCS_write_1A_1P(0xFF, 0x05);
+	TC358768_DCS_write_1A_1P(0xFB, 0x01);
+	TC358768_DCS_write_1A_1P(0xE7, 0x00);
+	TC358768_DCS_write_1A_1P(0xFF, 0x04);
+	TC358768_DCS_write_1A_1P(0xFB, 0x01);
+	TC358768_DCS_write_1A_1P(0x08, 0x06);
+	TC358768_DCS_write_1A_1P(0xFF, 0x00);
+	TC358768_DCS_write_1A_1P(0xFB, 0x01);
+	TC358768_DCS_write_1A_1P(0xD3, 0x06);
+	TC358768_DCS_write_1A_1P(0xD4, 0x04);
+	TC358768_DCS_write_1A_1P(0x11, 0x00);
+	TC358768_DCS_write_1A_1P(0xFC, 0x00);
+	TC358768_DCS_write_1A_1P(0x29, 0x00);
+	TC358768_DCS_write_1A_1P(0xFC, 0x00);
+	TC358768_DCS_write_1A_1P(0x51, 0xFF);
+	TC358768_DCS_write_1A_1P(0x53, 0x24);
+	TC358768_DCS_write_1A_1P(0x55, 0x01);
+	TC358768_DCS_write_1A_1P(0xFD, 0x00);
+	TC358768_DCS_write_1A_1P(0x51, 0xFF);
+	TC358768_DCS_write_1A_1P(0xFD, 0x00);
+	TC358768_DCS_write_1A_1P(0x28, 0x00);
+	TC358768_DCS_write_1A_1P(0xFC, 0x00);
+	TC358768_DCS_write_1A_1P(0x10, 0x00);
+	TC358768_DCS_write_1A_1P(0xFC, 0x00);
+	TC358768_DCS_write_1A_1P(0xFD, 0x00);
+	
 	TC358768_DCS_write_1A_1P(0xFF, 0xEE);
 	TC358768_DCS_write_1A_1P(0xFB, 0x01);
 	TC358768_DCS_write_1A_1P(0x18, 0x40);
