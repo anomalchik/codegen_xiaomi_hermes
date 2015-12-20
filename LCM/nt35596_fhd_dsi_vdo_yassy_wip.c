@@ -130,7 +130,7 @@ static void init_lcm_registers(void)
 	TC358768_DCS_write_1A_1P(0xFD, 0x00);
 	TC358768_DCS_write_1A_1P(0x51, 0xFF);
 	TC358768_DCS_write_1A_1P(0xFD, 0x00);
-	TC358768_DCS_write_1A_1P(0x28, 0x00)
+	TC358768_DCS_write_1A_1P(0x28, 0x00);
 	TC358768_DCS_write_1A_1P(0xFC, 0x14);
 	TC358768_DCS_write_1A_1P(0xFF, 0x00);
 	TC358768_DCS_write_1A_1P(0x10, 0x00);
@@ -179,7 +179,7 @@ static void init_lcm_registers(void)
 	TC358768_DCS_write_1A_1P(0x7D, 0x00);
 	TC358768_DCS_write_1A_1P(0x7E, 0xCC);
 	TC358768_DCS_write_1A_1P(0x7F, 0x00);
-	TC358768_DCS_write_1A_1P(0x80, 0xE01);
+	TC358768_DCS_write_1A_1P(0x80, 0x01);
 	TC358768_DCS_write_1A_1P(0x71, 0x00);
 	TC358768_DCS_write_1A_1P(0x82, 0xF2);
 	TC358768_DCS_write_1A_1P(0x83, 0x01);
